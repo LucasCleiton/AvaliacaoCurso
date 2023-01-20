@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles/global.css" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- import icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <title>Cadastro</title>
+</head>
+
+
+<body>
+    <h1>Cadastro</h1>
+    <br>
+
+    <div class="container">
+        <form action="/formGeral" method="post">
+
+
+
+
+            <label>
+                <h5>Dados do Gerais</h5>
+            </label>
+            <br>
+            <i class="material-icons prefix">location_city</i>
+            <input typer="text" name="instituicao" placeholder="Instituição" value="${data.INSTITUICAO}">
+            <input typer="text" name="campus" placeholder="Campus / DEAD" value="${data.CAMPUSDEAD}">
+            <input typer="text" name="endereco" placeholder="Endereço" value="${data.ENDERECO}">
+
+            <i class="material-icons prefix">person</i>
+            <input typer="text" name="diretor" placeholder="Diretor(a) geral / DEAD" value="${data.DIRETORGERALDEAD}">
+            <input typer="text" name="diretorensino" placeholder="Diretor(a) de ensino" value="${data.DIRETORDEENSINO}">
+
+            <i class="material-icons prefix">assignment</i>
+            <input typer="text" name="ato" placeholder="Ato regulatório" value="${data.ATOREGULATORIO}">
+            <input typer="text" name="eixo" placeholder="Eixo tecnológico do curso" value="${data.EIXOTECNOLOGICO}">
+            <input typer="text" name="modalidade" placeholder="Modalidade do Curso" value="${data.MODALIDADECURSO}">
+            <input typer="text" name="curso" placeholder="Curso" value="${data.CURSO}">
+
+            <i class="material-icons prefix">person</i>
+            <input typer="text" name="coordenador" placeholder="Coordenador(a)" value="${data.COORDENADOR}">
+            <input typer="text" name="bibliotecario" placeholder="Bibliotecário(a)" value="${data.BIBLIOTECARIO}">
+
+            <i class="material-icons prefix">assignment</i>
+
+            <input typer="text" name="assesoria" placeholder="Assesoria pedagógica"
+                value="${data.ASSESSORIAPEDAGOGICA}">
+            <input typer="text" name="portaria" placeholder="Portaria da comissão de avaliação"
+                value="${data.PORTARIACOMISSAOAVALIACAO}">
+
+
+
+
+
+
+            <button href="/" style="margin-right: 10pt;" typer="reset"
+                class="waves-effect waves-light btn  green darken-1">Cancelar</button>
+            <button typer="submit" class="waves-effect waves-light btn  green darken-1">Salvar</button>
+
+
+
+
+
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>

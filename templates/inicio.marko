@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title> ADP | IFPE</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link href="/styles/global.css" rel="stylesheet">
+    <script defer src="dao/script.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- import icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+</head>
+
+<body class=" grey lighten-2">
+
+    <div class="container green lighten-1" style="border-radius: 10px 20px;">
+        <h1>Bem vindo!</h1>
+        <h5>selecione o botão para cadastrar o avaliador</h5>
+
+
+        <a href="/form" class="waves-effect waves-light btn-large  green darken-1">Novo</a>
+
+
+        <table class="highlight">
+            <thead class=" grey lighten-2">
+                <th>Id</th>
+                <th>nome</th>
+                <th>lotação</th>
+                <th>email</th>
+                <th>telefone</th>
+                <th>opção</th>
+            </thead>
+
+
+            <for|avaliador, index| of=data.results>
+                <tr class="grey lighten-3">
+                    <td>${avaliador.ID}</td>
+                    <td>${avaliador.NOME}</td>
+                    <td>${avaliador.LOTACAO}</td>
+                    <td>${avaliador.EMAIL}</td>
+                    <td>${avaliador.TELEFONE}</td>
+
+
+                    <td>
+
+
+                        <a id="questionario" style="margin-right: 10pt;" href="/questionario1"
+                            class="waves-effect waves-light btn  green darken-1">
+                            <i class="material-icons right">content_paste</i>INICIAR
+                        </a>
+
+
+
+                        <a id="resultado" style="margin-right: 10pt;" href="/resultado/${avaliador.ID}"
+                            class="waves-effect waves-light btn  green darken-1">
+                            <i class="material-icons right">assignment_turned_in</i>RESULTADO
+                        </a>
+
+
+
+
+
+
+
+
+
+                    </td>
+                </tr>
+
+                </for>
+        </table>
+
+
+
+    </div>
+
+    <for|message, index| of=data.error_messages>
+
+        <script>M.toast({ html: '${message}' })</script>
+        </for>
+
+
+
+</body>
+
+</html>

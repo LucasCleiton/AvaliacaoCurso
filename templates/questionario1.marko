@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionario</title>
+    <link href="/styles/global.css" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- import icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+
+</head>
+
+
+<body>
+    <div class="green lighten-1">
+        <h1>Questionario</h1>
+
+    </div>
+
+
+    <form action="/questionario1" method="post">
+        <fieldset>
+            <h3 class=" grey lighten-2">DIMENSÃO 1 – ORGANIZAÇÃO DIDÁTICO PEDAGÓGICA:</h3>
+            <div class="DIMENSAO">
+                <div class="D1">
+                    <table>
+
+                        <tr>
+
+                            <td>
+                                <div>
+                                    <p> 1.1 Verticalização do Ensino
+                                        <br>
+                                        <select class="browser-default" name="q1">
+                                            <option value="1" selected="${data.D1Q1 == '1'}">1</option>
+                                            <option value="2" selected="${data.D1Q1 == '2'}">2</option>
+                                            <option value="3" selected="${data.D1Q1 == '3'}">3</option>
+                                            <option value="4" selected="${data.D1Q1 == '4'}">4</option>
+                                            <option value="5" selected="${data.D1Q1 == '5'}">5</option>
+                                            <option value="0" selected="${data.D1Q1 == '0'}">NSA</option>
+                                        </select>
+                                        <input value="${data.D1C1}" type="text" name="c1" placeholder="Comentario" />
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p> 1.2 Habilitação, qualificações e especializações
+                                        <br>
+                                        <select class="browser-default" name="q2">
+                                            <option value="1" selected="${data.D1Q2 == '1'}">1</option>
+                                            <option value="2" selected="${data.D1Q2 == '2'}">2</option>
+                                            <option value="3" selected="${data.D1Q2 == '3'}">3</option>
+                                            <option value="4" selected="${data.D1Q2 == '4'}">4</option>
+                                            <option value="5" selected="${data.D1Q2 == '5'}">5</option>
+                                            <option value="0" selected="${data.D1Q2 == '0'}">NSA</option>
+                                        </select>
+                                        <input value="${data.D1C2}" type="text" name="c2" placeholder="Comentario" />
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p> 1.3 Requisitos, formas de acesso, vagas, periodicidade, número de turma, turnos
+                                        e público
+                                        alvo
+                                        <br>
+                                        <select class="browser-default" name="q3">
+                                            <option value="1" selected="${data.D1Q3 == '1'}">1</option>
+                                            <option value="2" selected="${data.D1Q3 == '2'}">2</option>
+                                            <option value="3" selected="${data.D1Q3 == '3'}">3</option>
+                                            <option value="4" selected="${data.D1Q3 == '4'}">4</option>
+                                            <option value="5" selected="${data.D1Q3 == '5'}">5</option>
+                                            <option value="0" selected="${data.D1Q3 == '0'}">NSA</option>
+                                        </select>
+                                        <input value="${data.D1C3}" type="text" name="c3" placeholder="Comentario" />
+                                    </p>
+
+                                </div>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <div>
+                                    <p> 1.4 Monitoria
+                                        <br>
+                                        <select class="browser-default" name="q4">
+                                            <option value="1" selected="${data.D1Q4 == '1'}">1</option>
+                                            <option value="2" selected="${data.D1Q4 == '2'}">2</option>
+                                            <option value="3" selected="${data.D1Q4 == '3'}">3</option>
+                                            <option value="4" selected="${data.D1Q4 == '4'}">4</option>
+                                            <option value="5" selected="${data.D1Q4 == '5'}">5</option>
+                                            <option value="0" selected="${data.D1Q4 == '0'}">NSA</option>
+                                        </select>
+                                        <input value="${data.D1C2}" type="text" name="c4" placeholder="Comentario" />
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+
+                                    <p> 1.5 Setor de produção: aspectos didáticos (quando for o caso de curso na área
+                                        agrícola)
+                                        <br>
+                                        <select class="browser-default" name="q5">
+                                            <option value="1" selected="${data.D1Q5 == '1'}">1</option>
+                                            <option value="2" selected="${data.D1Q5 == '2'}">2</option>
+                                            <option value="3" selected="${data.D1Q5 == '3'}">3</option>
+                                            <option value="4" selected="${data.D1Q5 == '4'}">4</option>
+                                            <option value="5" selected="${data.D1Q5 == '5'}">5</option>
+                                            <option value="0" selected="${data.D1Q5 == '0'}">NSA</option>
+
+                                        </select>
+                                        <input value="${data.D1C5}" type="text" name="c5" placeholder="Comentario" />
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p> 1.6 Perfil profissional de conclusão
+                                        <br>
+                                        <select class="browser-default" name="q6">
+                                            <option value="1" selected="${data.D1Q6 == '1'}">1</option>
+                                            <option value="2" selected="${data.D1Q6 == '2'}">2</option>
+                                            <option value="3" selected="${data.D1Q6 == '3'}">3</option>
+                                            <option value="4" selected="${data.D1Q6 == '4'}">4</option>
+                                            <option value="5" selected="${data.D1Q6 == '5'}">5</option>
+                                            <option value="0" selected="${data.D1Q6 == '0'}">NSA</option>
+
+                                        </select>
+                                        <input value="${data.D1C6}" type="text" name="c6" placeholder="Comentario" />
+                                    </p>
+
+                                </div>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <div>
+
+                                    <p> 1.7 Campo de atuação
+                                        <br>
+                                        <select class="browser-default" name="q7">
+                                            <option value="1" selected="${data.D1Q7 == '1'}">1</option>
+                                            <option value="2" selected="${data.D1Q7 == '2'}">2</option>
+                                            <option value="3" selected="${data.D1Q7 == '3'}">3</option>
+                                            <option value="4" selected="${data.D1Q7 == '4'}">4</option>
+                                            <option value="5" selected="${data.D1Q7 == '5'}">5</option>
+                                            <option value="0" selected="${data.D1Q7 == '0'}">NSA</option>
+
+                                        </select>
+                                        <input value="${data.D1C7}" type="text" name="c7" placeholder="Comentario" />
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p> 1.8 Princípios e concepções pedagógicas
+                                        <br>
+                                        <select class="browser-default" name="q8">
+                                            <option value="1" selected="${data.D1Q8 == '1'}">1</option>
+                                            <option value="2" selected="${data.D1Q8 == '2'}">2</option>
+                                            <option value="3" selected="${data.D1Q8 == '3'}">3</option>
+                                            <option value="4" selected="${data.D1Q8 == '4'}">4</option>
+                                            <option value="5" selected="${data.D1Q8 == '5'}">5</option>
+                                            <option value="0" selected="${data.D1Q8 == '0'}">NSA</option>
+
+                                        </select>
+                                        <input value="${data.D1C8}" type="text" name="c8" placeholder="Comentario" />
+                                    </p>
+
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p> 1.9 Estrutura curricular
+                                        <br>
+                                        <select class="browser-default" name="q9">
+                                            <option value="1" selected="${data.D1Q9 == '1'}">1</option>
+                                            <option value="2" selected="${data.D1Q9 == '2'}">2</option>
+                                            <option value="3" selected="${data.D1Q9 == '3'}">3</option>
+                                            <option value="4" selected="${data.D1Q9 == '4'}">4</option>
+                                            <option value="5" selected="${data.D1Q9 == '5'}">5</option>
+                                            <option value="0" selected="${data.D1Q9 == '0'}">NSA</option>
+
+                                        </select>
+                                        <input value="${data.D1C9}" type="text" name="c9" placeholder="Comentario" />
+                                    </p>
+                                </div>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <div>
+                                    <p> 1.10 Itinerário formativo ou desenho curricular
+                                        <br>
+                                        <select class="browser-default" name="q10">
+                                            <option value="1" selected="${data.D1Q10 == '1'}">1</option>
+                                            <option value="2" selected="${data.D1Q10 == '2'}">2</option>
+                                            <option value="3" selected="${data.D1Q10 == '3'}">3</option>
+                                            <option value="4" selected="${data.D1Q10 == '4'}">4</option>
+                                            <option value="5" selected="${data.D1Q10 == '5'}">5</option>
+                                            <option value="0" selected="${data.D1Q10 == '0'}">NSA</option>
+
+                                        </select>
+                                        <input value="${data.D1C10}" type="text" name="c10" placeholder="Comentario" />
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+
+                                    <p> 1.11 Matriz curricular
+                                        <br>
+                                        <select class="browser-default" name="q11">
+                                            <option value="1" selected="${data.D1Q11 == '1'}">1</option>
+                                            <option value="2" selected="${data.D1Q11 == '2'}">2</option>
+                                            <option value="3" selected="${data.D1Q11 == '3'}">3</option>
+                                            <option value="4" selected="${data.D1Q11 == '4'}">4</option>
+                                            <option value="5" selected="${data.D1Q11 == '5'}">5</option>
+                                            <option value="0" selected="${data.D1Q11 == '0'}">NSA</option>
+
+                                        </select>
+                                        <input value="${data.D1C11}" type="text" name="c11" placeholder="Comentario" />
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+
+                                    <p> 1.12 Orientações metodológicas
+                                        <br>
+                                        <select class="browser-default" name="q12">
+                                            <option value="1" selected="${data.D1Q12 == '1'}">1</option>
+                                            <option value="2" selected="${data.D1Q12 == '2'}">2</option>
+                                            <option value="3" selected="${data.D1Q12 == '3'}">3</option>
+                                            <option value="4" selected="${data.D1Q12 == '4'}">4</option>
+                                            <option value="5" selected="${data.D1Q12 == '5'}">5</option>
+                                            <option value="0" selected="${data.D1Q12 == '0'}">NSA</option>
+
+                                        </select>
+                                        <input value="${data.D1C12}" type="text" name="c12" placeholder="Comentario" />
+                                    </p>
+
+                                </div>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <div>
+
+
+                                    <p> 1.13 Atividades de pesquisa
+                                        <br>
+                                        <select class="browser-default" name="q13">
+                                            <option value="1" selected="${data.D1Q13 == '1'}">1</option>
+                                            <option value="2" selected="${data.D1Q13 == '2'}">2</option>
+                                            <option value="3" selected="${data.D1Q13 == '3'}">3</option>
+                                            <option value="4" selected="${data.D1Q13 == '4'}">4</option>
+                                            <option value="5" selected="${data.D1Q13 == '5'}">5</option>
+                                            <option value="0" selected="${data.D1Q13 == '0'}">NSA</option>
+
+                                        </select>
+                                        <input value="${data.D1C13}" type="text" name="c13" placeholder="Comentario" />
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+
+                                    <p> 1.14 Atividades de extensão
+                                        <br>
+                                        <select class="browser-default" name="q14">
+                                            <option value="1" selected="${data.D1Q14 == '1'}">1</option>
+                                            <option value="2" selected="${data.D1Q14 == '2'}">2</option>
+                                            <option value="3" selected="${data.D1Q14 == '3'}">3</option>
+                                            <option value="4" selected="${data.D1Q14 == '4'}">4</option>
+                                            <option value="5" selected="${data.D1Q14 == '5'}">5</option>
+                                            <option value="0" selected="${data.D1Q14 == '0'}">NSA</option>
+
+                                        </select>
+                                        <input value="${data.D1C14}" type="text" name="c14" placeholder="Comentario" />
+                                    </p>
+
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+
+
+                                    <p> 1.15 Prática profissional
+                                        <br>
+                                        <select class="browser-default" name="q15">
+                                            <option value="1" selected="${data.D1Q15 == '1'}">1</option>
+                                            <option value="2" selected="${data.D1Q15 == '2'}">2</option>
+                                            <option value="3" selected="${data.D1Q15 == '3'}">3</option>
+                                            <option value="4" selected="${data.D1Q15 == '4'}">4</option>
+                                            <option value="5" selected="${data.D1Q15 == '5'}">5</option>
+                                            <option value="0" selected="${data.D1Q15 == '0'}">NSA</option>
+
+                                        </select>
+                                        <input value="${data.D1C15}" type="text" name="c15" placeholder="Comentario" />
+                                    </p>
+
+                                </div>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <div>
+
+                                    <p> 1.16 Visitas técnicas
+                                        <br>
+                                        <select class="browser-default" name="q16">
+                                            <option value="1" selected="${data.D1Q16 == '1'}">1</option>
+                                            <option value="2" selected="${data.D1Q16 == '2'}">2</option>
+                                            <option value="3" selected="${data.D1Q16 == '3'}">3</option>
+                                            <option value="4" selected="${data.D1Q16 == '4'}">4</option>
+                                            <option value="5" selected="${data.D1Q16 == '5'}">5</option>
+                                            <option value="0" selected="${data.D1Q16 == '0'}">NSA</option>
+
+                                        </select>
+                                        <input value="${data.D1C16}" type="text" name="c16" placeholder="Comentario" />
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+
+                                    <p> 1.17 Estágio profissional supervisionado - quando for o caso
+                                        <br>
+                                        <select class="browser-default" name="q17">
+                                            <option value="1" selected="${data.D1Q17 == '1'}">1</option>
+                                            <option value="2" selected="${data.D1Q17 == '2'}">2</option>
+                                            <option value="3" selected="${data.D1Q17 == '3'}">3</option>
+                                            <option value="4" selected="${data.D1Q17 == '4'}">4</option>
+                                            <option value="5" selected="${data.D1Q17 == '5'}">5</option>
+                                            <option value="0" selected="${data.D1Q17 == '0'}">NSA</option>
+
+                                        </select>
+                                        <input value="${data.D1C17}" type="text" name="c17" placeholder="Comentario" />
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p> 1.18 Ementário dos componentes curriculares
+                                        <br>
+                                        <select class="browser-default" name="q18">
+                                            <option value="1" selected="${data.D1Q18 == '1'}">1</option>
+                                            <option value="2" selected="${data.D1Q18 == '2'}">2</option>
+                                            <option value="3" selected="${data.D1Q18 == '3'}">3</option>
+                                            <option value="4" selected="${data.D1Q18 == '4'}">4</option>
+                                            <option value="5" selected="${data.D1Q18 == '5'}">5</option>
+                                            <option value="0" selected="${data.D1Q18 == '0'}">NSA</option>
+
+                                        </select>
+                                        <input value="${data.D1C18}" type="text" name="c18" placeholder="Comentario" />
+                                    </p>
+                                </div>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <div>
+
+                                    <p> 1.19 Acessibilidade
+                                        <br>
+                                        <select class="browser-default" name="q19">
+                                            <option value="1" selected="${data.D1Q19 == '1'}">1</option>
+                                            <option value="2" selected="${data.D1Q19 == '2'}">2</option>
+                                            <option value="3" selected="${data.D1Q19 == '3'}">3</option>
+                                            <option value="4" selected="${data.D1Q19 == '4'}">4</option>
+                                            <option value="5" selected="${data.D1Q19 == '5'}">5</option>
+                                            <option value="0" selected="${data.D1Q19 == '0'}">NSA</option>
+
+                                        </select>
+                                        <input value="${data.D1C19}" type="text" name="c19" placeholder="Comentario" />
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+
+                                    <p> 1.20 Critérios de aproveitamento de conhecimentos e experiências anteriores
+                                        <br>
+                                        <select class="browser-default" name="q20">
+                                            <option value="1" selected="${data.D1Q20 == '1'}">1</option>
+                                            <option value="2" selected="${data.D1Q20 == '2'}">2</option>
+                                            <option value="3" selected="${data.D1Q20 == '3'}">3</option>
+                                            <option value="4" selected="${data.D1Q20 == '4'}">4</option>
+                                            <option value="5" selected="${data.D1Q20 == '5'}">5</option>
+                                            <option value="0" selected="${data.D1Q20 == '0'}">NSA</option>
+
+                                        </select>
+                                        <input value="${data.D1C20}" type="text" name="c20" placeholder="Comentario" />
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p> 1.21 Avaliação dos processos de ensino e aprendizagem
+                                        <br>
+                                        <select class="browser-default" name="q21">
+                                            <option value="1" selected="${data.D1Q21 == '1'}">1</option>
+                                            <option value="2" selected="${data.D1Q21 == '2'}">2</option>
+                                            <option value="3" selected="${data.D1Q21 == '3'}">3</option>
+                                            <option value="4" selected="${data.D1Q21 == '4'}">4</option>
+                                            <option value="5" selected="${data.D1Q21 == '5'}">5</option>
+                                            <option value="0" selected="${data.D1Q21 == '0'}">NSA</option>
+
+                                        </select>
+                                        <input value="${data.D1C21}" type="text" name="c21" placeholder="Comentario" />
+                                    </p>
+
+                                </div>
+                            </td>
+
+                        </tr>
+                        <tr>
+
+                            <td>
+                                <div>
+                                    <p> 1.22 Acompanhamento de egressos
+                                        <br>
+                                        <select class="browser-default" name="q22">
+                                            <option value="1" selected="${data.D1Q22 == '1'}">1</option>
+                                            <option value="2" selected="${data.D1Q22 == '2'}">2</option>
+                                            <option value="3" selected="${data.D1Q22 == '3'}">3</option>
+                                            <option value="4" selected="${data.D1Q22 == '4'}">4</option>
+                                            <option value="5" selected="${data.D1Q22 == '5'}">5</option>
+                                            <option value="0" selected="${data.D1Q22 == '0'}">NSA</option>
+
+                                        </select>
+                                        <input value="${data.D1C22}" type="text" name="c22" placeholder="Comentario" />
+                                    </p>
+
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+
+                                    <p> 1.23 Programa dos componentes curriculares
+                                        <br>
+                                        <select class="browser-default" name="q23">
+                                            <option value="1" selected="${data.D1Q23 == '1'}">1</option>
+                                            <option value="2" selected="${data.D1Q23 == '2'}">2</option>
+                                            <option value="3" selected="${data.D1Q23 == '3'}">3</option>
+                                            <option value="4" selected="${data.D1Q23 == '4'}">4</option>
+                                            <option value="5" selected="${data.D1Q23 == '5'}">5</option>
+                                            <option value="0" selected="${data.D1Q23 == '0'}">NSA</option>
+
+                                        </select>
+                                        <input value="${data.D1C23}" type="text" name="c23" placeholder="Comentario" />
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+
+                                    <p> 1.24 Permanência
+                                        <br>
+                                        <select class="browser-default" name="q24">
+                                            <option value="1" selected="${data.D1Q24 == '1'}">1</option>
+                                            <option value="2" selected="${data.D1Q24 == '2'}">2</option>
+                                            <option value="3" selected="${data.D1Q24 == '3'}">3</option>
+                                            <option value="4" selected="${data.D1Q24 == '4'}">4</option>
+                                            <option value="5" selected="${data.D1Q24 == '5'}">5</option>
+                                            <option value="0" selected="${data.D1Q24 == '0'}">NSA</option>
+
+                                        </select>
+                                        <input value="${data.D1C24}" type="text" name="c24" placeholder="Comentario" />
+                                    </p>
+
+                                </div>
+                            </td>
+
+                        </tr>
+
+
+
+                    </table>
+
+
+                </div>
+
+
+
+
+            </div>
+        </fieldset>
+
+
+        <a href="/" style="margin-right: 10pt;" class="waves-effect waves-light btn green darken-1">Cancelar</a>
+        <button class="waves-effect waves-light btn green darken-1" typer="submit">Dimensão 2</button>
+
+
+    </form>
+
+    <br>
+    <div>
+        <h6><b>CONCEITO/DESCRIÇÃO</b></h6>
+
+
+        <table>
+
+
+
+            <tr>
+                <th>1</th>
+                <td>Quando os indicadores da dimensão avaliada configuram um quadro <b> MUITO AQUÉM </b> do que expressa
+                    o
+                    referencial mínimo de qualidade;</td>
+                <th>2</th>
+                <td>Quando os indicadores da dimensão avaliada configuram um quadro<b> AQUÉM </b> do que expressa o
+                    referencial
+                    mínimo de qualidade;</td>
+                <th>3</th>
+                <td>Quando os indicadores da dimensão avaliada configuram um quadro <b>SIMILAR </b> ao que expressa o
+                    referencial
+                    mínimo de qualidade;</td>
+                <th>4</th>
+                <td>Quando os indicadores da dimensão avaliada configuram um quadro <b>ALÉM</b> do que expressa o
+                    referencial
+                    mínimo de qualidade;</td>
+                <th>5</th>
+                <td>Quando os indicadores da dimensão avaliada configuram um quadro <b>MUITO ALÉM </b> do que expressa o
+                    referencial
+                    mínimo de qualidade.</td>
+                <th>NSA</th>
+                <td>Quando o item <b>NÃO SE APLICA </b> ao curso ou ao indicador especificado.</td>
+
+
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
